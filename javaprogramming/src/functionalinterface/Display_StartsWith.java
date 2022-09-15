@@ -16,7 +16,7 @@ public class Display_StartsWith {
 		for(String name:names) {
 			
 			if(pred.test(name))
-				System.out.println(name);
+				System.out.println(name); // print
 			
 		}
 		
