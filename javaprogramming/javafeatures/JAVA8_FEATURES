@@ -1,0 +1,26 @@
+Some of the important Java 8 features are;
+
+forEach() method in Iterable interface
+default and static methods in Interfaces
+Functional Interfaces and Lambda Expressions
+Java Stream API for Bulk Data Operations on Collections
+Java Time API
+Collection API improvements
+Concurrency API improvements
+Java IO improvements
+
+
+1. forEach() method in Iterable interface
+
+Whenever we need to traverse through a Collection, we need to create an Iterator whose whole purpose
+is to iterate over, and then we have business logic in a loop for each of the elements in the Collection.
+We might get ConcurrentModificationException if the iterator is not used properly.
+
+Java 8 has introduced forEach method in java.lang.Iterable interface so that while writing
+code we focus on business logic. The forEach method takes java.util.function.Consumer object as an argument,
+so it helps in having our business logic at a separate location that we can reuse. Let’s see forEach usage
+with a simple example.
+
+
+Note: The number of lines might increase but forEach method helps in having the logic for iteration and
+business logic at separate place resulting in higher separation of concern and cleaner code.
