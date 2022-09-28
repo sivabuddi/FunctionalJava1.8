@@ -24,3 +24,30 @@ with a simple example.
 
 Note: The number of lines might increase but forEach method helps in having the logic for iteration and
 business logic at separate place resulting in higher separation of concern and cleaner code.
+
+2. default and static methods in Interfaces
+If you read forEach method details carefully, you will notice that it’s defined in
+Iterable interface but we know that interfaces can’t have a method body. From Java 8,
+interfaces are enhanced to have a method with implementation. We can use default and static keyword to create
+ interfaces with method implementation. forEach method implementation in Iterable interface is:
+
+3. Differences between abstract classes and Interfaces in java8.
+
+a) Abstract classes are classes, so they are not restricted to other restrictions of the interface in Java,
+ like abstract class can have the state, but you cannot have the state on the interface in Java.
+
+b) Another semantic difference between an interface with default methods and an abstract class is that you can
+define constructors inside an abstract class, but you cannot define constructors inside an interface in Java.
+
+
+4. Default Methods support backward compatibility.
+
+Backwards compatibility means that existing code can work without modifications. In this case, they aim for
+source compatibility, which means you can compile the same source code without changes against the new Java version.
+The other thing is binary compatibility, which means that old compiled classes continue
+to work (which Java is famous for).
+
+Reference:
+https://dzone.com/articles/when-to-use-java-8-default-methods-in-interfaces
+https://belief-driven-design.com/java-8-interfaces-default-methods-17366cd5442/
+https://www.youtube.com/watch?v=nsZb0FctHJ4
