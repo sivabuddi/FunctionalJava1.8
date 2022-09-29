@@ -1,5 +1,4 @@
-package learning.features;
-import java.net.Inet4Address;
+package learning.features.foreachdeafultstatic;
 import java.util.*;
 import java.util.function.Consumer;
 
