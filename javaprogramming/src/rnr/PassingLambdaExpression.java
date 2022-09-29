@@ -18,6 +18,7 @@ public class PassingLambdaExpression {
 		
 		Circle circle = (r) -> { System.out.println("Area of a cirlce = "+Math.PI * r *r);};
 		circle.calculate(2);
+
 		
 		
 	}
