@@ -1,5 +1,4 @@
 package learning.features.methodreferences;
-import learning.features.Interface3;
 import java.util.function.BiFunction;
 
 class Arithmetics{
