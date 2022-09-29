@@ -1,4 +1,4 @@
-package learning.features;
+package learning.features.foreachdeafultstatic;
 
 @FunctionalInterface
 public interface Interface1 {

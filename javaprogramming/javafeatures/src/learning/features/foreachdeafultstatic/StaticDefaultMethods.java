@@ -1,6 +1,4 @@
-package learning.features;
-import learning.features.Interface1;
-import learning.features.Interface2;
+package learning.features.foreachdeafultstatic;
 
 public class StaticDefaultMethods implements Interface1, Interface2{
 
