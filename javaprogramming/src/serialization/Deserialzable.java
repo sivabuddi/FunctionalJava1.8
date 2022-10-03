@@ -13,7 +13,7 @@ public class Deserialzable {
         // deserialize the object
         employee = (Employee) input.readObject();
 
-        System.out.println("After Deserialzing Employee Object");
+        System.out.println("After Deserialzing Employee Object Information");
 
         System.out.println(employee.getEmpname());
         System.out.println(employee.getAge());
