@@ -1,0 +1,30 @@
+Serialization: Serialization is a mechanism of writing the state of an object into a byte-stream. The serialization
+is mainly used in Hibernate, RMI, JPA, EJB and JMS technologies. The mechanism that reverses the process of
+serialization is called deserialization. These processes are platform-independent means we can serialize objects in
+one platform and can deserialize them on other platforms. The Serializable interface is implemented to serialize the objects in Java
+
+
+Externalization in Java is used to customize the serialization mechanism. Java serialization is not much efficient.
+When we have bloated objects that hold several attributes and properties, it is not good to serialize them.
+Here, the externalization will be more efficient.
+
+Java serialization is not much effective when we have bloated objects with multiple attributes and properties.
+Here, externalization comes into role. It allows us o customize the serialization. For example, if we have implemented
+the Serialization interface in a class, we can externalize it using the writeExternal() method. When users reconstruct
+an externalized object from their end, an instance of the object will be created using the readExternal() method.
+
+Thus, the externalization provides custom serialization, where we can manage our object stream and decide what to
+store in it.
+
+The externalization is useful if we want to serialize a part of an object. We can serialize only the required
+fields of an object.
+
+
+
+References:.
+
+1. https://www.javatpoint.com/externalization-in-java
+2. https://www.edureka.co/blog/externalization-in-java/#:~:text=Externalization%20in%20Java%20is%20used,using%20the%20method%20writeExternal().
+3. https://www.geeksforgeeks.org/difference-between-serializable-and-externalizable-in-java-serialization/
+4. https://www.tutorialspoint.com/difference-between-serialization-and-externalization-in-java
+5. https://www.codejava.net/java-se/file-io/understanding-java-externalization-with-examples
