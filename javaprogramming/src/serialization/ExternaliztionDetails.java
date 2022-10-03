@@ -4,7 +4,7 @@ public class ExternaliztionDetails {
 
     public static void main(String[] args) throws Exception, IOException{
 
-        File file=new File("Testing");
+        File file=new File("/Users/sivakumarbuddi/Courses/FunctionalJava1.8/javaprogramming/src/serialization/Testing");
 
         // Serialization using   Externalizable interface
 
