@@ -43,3 +43,13 @@ Important concurrent collections are
 1) ConcurrentHashMap
 2) CopyOnWriteArrayList
 3) CopyOnWriteArraySet
+
+
+
+Map(I) <---- ConcurrentMap(I) <----ConcurrentHashMap(C)
+
+Methods in ConcurrentMap(I)
+
+1. public abstract V putIfAbsent(K, V);
+2. public abstract boolean remove(java.lang.Object, java.lang.Object);
+3. public abstract boolean replace(K, V, V);
