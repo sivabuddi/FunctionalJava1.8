@@ -93,3 +93,31 @@ Constructors in ConcurrencyHashMap:
   public java.util.concurrent.ConcurrentHashMap(initial capacity, fill ratio, concurrency level);
    public java.util.concurrent.ConcurrentHashMap(java.util.Map<? extends K, ? extends V>);
 
+
+Difference between HashMap and ConcurrentHashMap
+
+1. Hash Map is not Thread Safe.
+2. Relatively performance is high since threads are not required to wait perform
+operations on hashmap which leads data consistency problems some times.
+3. While one thread is iterating hashmap, other thread not allowed to modify the hashmap object.If do so,
+it will throw ConcurrentModificationException.
+4. Iterator is fail-fast.
+5. Null is allowed for Both Key and values.
+6. Introduced in java 1.2
+
+
+ConcurrentHashMap
+
+1. ConcurrentHashMap is Thread safe.
+2. Relatively performance is low, because sometimes threads are required to wait to
+operate on ConcurrentHashMap
+3. While one thread is iterating ConcurrentHashMap, other thread allowed to modify the
+ConcurrentHashMap in safe manner. It will never throw ConcurrentModificationException. It is
+4. Iterator is Fail-Safe.
+5. Null is not allowed for both key and values.
+6. It was introduced in java 1.5.
+
+Note: If we try to modify the underlying collection, Iterator immediately fails and raise
+ConcurrentModificationException.we call those iterators are Fail-fast iterators.(Example: HashMap)
+
+
