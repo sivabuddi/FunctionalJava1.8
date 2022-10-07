@@ -16,6 +16,7 @@ public class ConcurrentHashMapEx2 extends Thread{
         }catch(InterruptedException ie){}
         System.out.println("Child Thread updating the ConcurrentHashMap");
         concurrentHashMap.put(103,"D");
+        //System.out.println(concurrentHashMap);
     }
 
 
