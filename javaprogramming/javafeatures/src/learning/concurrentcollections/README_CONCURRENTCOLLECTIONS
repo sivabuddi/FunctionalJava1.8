@@ -121,3 +121,38 @@ Note: If we try to modify the underlying collection, Iterator immediately fails 
 ConcurrentModificationException.we call those iterators are Fail-fast iterators.(Example: HashMap)
 
 
+
+CopyOnWriteArrayList(C):--
+
+Collection(I) <-- List (I) <-- CopyOnWriteArrayList(C)
+
+1. It is a Thread safe version of ArrayList as name indicates CopyOnWriteArrayList. It creates
+a cloned copy of underlying ArrayList for every update operation at certain point both
+will synchronized automatically which is taken care by JVM Internally.
+
+2. As update operation will performed on cloned copy. So there is no effect for the
+threads which perform read operations.
+
+3. It is costly to use because for every update operation a cloned copy will be created.
+Hence CopyOfWriteArrayList is best choice when several read operations and less number of
+write operations required to perform.
+
+4. Insertion order is preserved.
+5. Duplicate objects are allowed.
+6. Heterogeneous objects are allowed.
+7. Null insertion is possible.
+8. It implements Serializable, Cloneable and RandomAccess Interfaces.
+9. While one thread is operating CopyOnWriteArrayList, other thread will allow to modify the
+object of CopyOfWriteArrayList. It will never throw ConcurrentModificationException.
+10.This is iterator fail-safe.
+11. Iterator of ArrayList can perform remove operation but iterator of CopyOfWriteArrayList
+can not perform remove operation. Otherwise, we'll get RuntimeException saying UnsupportedOperationException.
+
+
+
+
+
+
+
+
+
