@@ -95,3 +95,5 @@ Explicit class loading:
 Explicit class loading occurs when a class is loaded by using 'loadClass()' method of ClassLoader class or
 using 'forName()' of class java.lang.Class. If the class is already loaded, then a reference is simply returned
 
+References:
+https://xperti.io/blogs/classnotfoundexception-vs-noclassdeffounderror-in-java/
