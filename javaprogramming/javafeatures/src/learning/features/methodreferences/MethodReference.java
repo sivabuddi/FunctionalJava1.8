@@ -9,9 +9,16 @@ public class MethodReference {
 
     public static void main(String[] args) {
 
-        Sayable sayable = MethodReference::saySomething;
-        System.out.println(sayable);
-        sayable.say();
+        // Without using method reference
+        Sayable sayable1 =() ->{System.out.println("Im in static method of MethodReference name saySomething");};
+        System.out.println(sayable1);
+        sayable1.say();
+
+        Sayable sayable2 = MethodReference::saySomething;
+        System.out.println(sayable2);
+        sayable2.say();
+
+
 
     }
 
