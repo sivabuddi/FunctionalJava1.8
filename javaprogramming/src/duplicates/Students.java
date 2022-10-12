@@ -44,32 +44,42 @@ public class Students {
         return result;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Students other = (Students) obj;
-        if (birthdate == null) {
-            if (other.birthdate != null)
-                return false;
-        } else if (!birthdate.equals(other.birthdate))
-            return false;
-        if (id != other.id)
-            return false;
-        if (name == null) {
-            if (other.name != null)
-                return false;
-        } else if (!name.equals(other.name))
-            return false;
-        return true;
-    }
+//    @Override
+//    public boolean equals(Object obj) {
+//        if (this == obj)
+//            return true;
+//        if (obj == null)
+//            return false;
+//        if (getClass() != obj.getClass())
+//            return false;
+//        Students other = (Students) obj;
+//        if (birthdate == null) {
+//            if (other.birthdate != null)
+//                return false;
+//        } else if (!birthdate.equals(other.birthdate))
+//            return false;
+//        if (id != other.id)
+//            return false;
+//        if (name == null) {
+//            if (other.name != null)
+//                return false;
+//        } else if (!name.equals(other.name))
+//            return false;
+//        return true;
+//    }
+
+
 
     @Override
     public String toString() {
         return "Student [id=" + id + ", name=" + name + ", birthdate=" + birthdate + "]";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Students students = (Students) o;
+        return id == students.id && name.equals(students.name) && birthdate.equals(students.birthdate);
     }
 }
