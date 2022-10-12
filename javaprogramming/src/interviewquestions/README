@@ -95,5 +95,17 @@ Explicit class loading:
 Explicit class loading occurs when a class is loaded by using 'loadClass()' method of ClassLoader class or
 using 'forName()' of class java.lang.Class. If the class is already loaded, then a reference is simply returned
 
+
+Note:
+
+In Java, ClassNotFoundException is a checked exception.
+
+In Java, a checked exception is one that the calling code must explicitly
+handle - either with a catch block, or a throws clause.
+
+Java exceptions are checked exceptions by default, and only a special set of exceptions
+are “unchecked”. The “unchecked” exceptions are RuntimeException, and any exception that extends
+(inherits from) RuntimeException.
+
 References:
 https://xperti.io/blogs/classnotfoundexception-vs-noclassdeffounderror-in-java/
