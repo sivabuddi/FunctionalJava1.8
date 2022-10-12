@@ -1,7 +1,6 @@
 package rnr;
 
 interface AddOperation{
-	
 	int add(int a, int b);
 }
 
