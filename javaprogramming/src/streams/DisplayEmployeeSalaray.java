@@ -20,11 +20,16 @@ public class DisplayEmployeeSalaray {
 		
 		Employee[] employee_array = emp_list.stream().filter((e) ->e.getSal()>400).toArray(Employee[]::new);
 		String list = Arrays.toString(employee_array);
-		
+
+		Employee[] employees1 = emp_list.stream().distinct().collect(Collectors.toList()).toArray(Employee[]::new);
+
 		for(int i=0;i<employee_array.length;i++)
 			System.out.println(employee_array[i].getName());
-		
-		
+
+
+//		for(int i=0;i<employees1.length;i++)
+//			System.out.println(employees1[i].getName());
+//
 		 	
 			 
 		
