@@ -3,7 +3,7 @@ package interviewquestions;
 class Testing {
 
     // Method
-    void greeting()
+    public void greeting()
     {
         // Print statement whenever method is called
         System.out.println("hello!");
