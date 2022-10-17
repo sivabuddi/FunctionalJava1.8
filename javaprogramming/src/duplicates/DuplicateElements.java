@@ -1,6 +1,10 @@
-package interviewquestions;
-import java.util.*;
-import java.util.stream.*;
+package duplicates;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 // How to find duplicate elements in a given integers list in java using Stream functions?
 public class DuplicateElements {
