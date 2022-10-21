@@ -8,6 +8,8 @@ package factory.designpattern;
 //The factory design pattern is used when we have a superclass with multiple subclasses
 // and based on input, we need to return one of the subclass. This pattern takes out the
 // responsibility of the instantiation of a class from the client program to the factory class.
+
+// https://www.digitalocean.com/community/tutorials/factory-design-pattern-in-java
 public class OperatingSystemFactory {
 
     public OS getInstanceOS(String str){
