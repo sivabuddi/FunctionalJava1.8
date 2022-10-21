@@ -4,7 +4,12 @@ Gang of Four Design Patterns:
 a) Singleton: The singleton pattern restricts the initialization of a class to ensure
               that only one instance of the class can be created.
 b) Factory:   The factory pattern takes out the responsibility of instantiating a object
-              from the class to a Factory class.
+              from the class to a Factory class. (OR)
+
+              The factory design pattern is used when we have a superclass with multiple sub-classes
+               and based on input, we need to return one of the sub-class. This pattern takes out
+                the responsibility of the instantiation of a class from the client program to the
+                 factory class.
 c) Abstract Factory: Allows us to create a Factory for factory classes.
 d) Builder: Creating an object step by step and a method to finally get the object instance.
 e) Prototype: Creating a new object instance from another similar instance
@@ -21,3 +26,7 @@ e) Prototype: Creating a new object instance from another similar instance
                 extend easily in future.
 
 ---------------
+
+References:
+1. https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns
+2.
