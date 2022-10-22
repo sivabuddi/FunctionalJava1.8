@@ -1,4 +1,4 @@
-package factory.designpattern;
+package creationaldesingpattern.factory.designpattern;
 
 public class IOS implements  OS{
     @Override
