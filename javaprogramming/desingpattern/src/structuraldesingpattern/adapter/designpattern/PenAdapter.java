@@ -1,4 +1,4 @@
-package adaptor.designpattern;
+package structuraldesingpattern.adapter.designpattern;
 // object level adapter
 public class PenAdapter implements Pen{
     PilotPen pp  = new PilotPen(); // composition

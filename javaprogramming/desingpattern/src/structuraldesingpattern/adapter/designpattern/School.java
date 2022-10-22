@@ -1,4 +1,4 @@
-package adaptor.designpattern;
+package structuraldesingpattern.adapter.designpattern;
 
 public class School {
 
