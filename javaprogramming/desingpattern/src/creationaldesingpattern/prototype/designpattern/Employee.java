@@ -1,4 +1,4 @@
-package prototype.designpattern;
+package creationaldesingpattern.prototype.designpattern;
 
 import java.util.ArrayList;
 import java.util.List;
