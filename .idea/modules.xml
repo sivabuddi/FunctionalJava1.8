@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FunctionalJava1.8.iml" filepath="$PROJECT_DIR$/FunctionalJava1.8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaprogramming/desingpattern/desingpattern.iml" filepath="$PROJECT_DIR$/javaprogramming/desingpattern/desingpattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaprogramming/javafeatures/javafeatures.iml" filepath="$PROJECT_DIR$/javaprogramming/javafeatures/javafeatures.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaprogramming/javaprogramming.iml" filepath="$PROJECT_DIR$/javaprogramming/javaprogramming.iml" />
     </modules>
