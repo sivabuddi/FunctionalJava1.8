@@ -1,4 +1,4 @@
-package builder.designpattern;
+package creationaldesingpattern.builder.designpattern;
 
 public class Shop {
 

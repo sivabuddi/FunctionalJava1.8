@@ -1,4 +1,4 @@
-package builder.designpattern;
+package creationaldesingpattern.builder.designpattern;
 
 // Builder DP: Creating an object step by step and a method to finally get the object instance.
 // https://www.digitalocean.com/community/tutorials/builder-design-pattern-in-java
