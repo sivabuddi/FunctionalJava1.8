@@ -10,5 +10,6 @@ public class ClientApp {
         triangle.applyColor();
         pentagon.applyColor();
 
+
     }
 }
