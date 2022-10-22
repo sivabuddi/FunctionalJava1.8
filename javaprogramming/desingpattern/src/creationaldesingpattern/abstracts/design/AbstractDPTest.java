@@ -1,4 +1,4 @@
-package abstracts.design;
+package creationaldesingpattern.abstracts.design;
 // https://www.digitalocean.com/community/tutorials/abstract-factory-design-pattern-in-java
 public class AbstractDPTest {
 

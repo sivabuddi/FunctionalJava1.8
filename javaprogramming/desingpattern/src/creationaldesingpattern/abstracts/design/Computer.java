@@ -1,4 +1,4 @@
-package abstracts.design;
+package creationaldesingpattern.abstracts.design;
 
 // If you are familiar with factory design pattern in java, you will notice that we have a
 // single Factory class. This factory class returns different subclasses based on the input

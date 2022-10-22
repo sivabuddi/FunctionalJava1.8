@@ -1,4 +1,4 @@
-package abstracts.design;
+package creationaldesingpattern.abstracts.design;
 
 public interface ComputerAbstractFactory {
     public Computer createComputer();
