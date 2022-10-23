@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/javaprogramming/desingpattern/desingpattern.iml" filepath="$PROJECT_DIR$/javaprogramming/desingpattern/desingpattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaprogramming/javafeatures/javafeatures.iml" filepath="$PROJECT_DIR$/javaprogramming/javafeatures/javafeatures.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaprogramming/javaprogramming.iml" filepath="$PROJECT_DIR$/javaprogramming/javaprogramming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaprogramming/oopprinciples/oopprinciples.iml" filepath="$PROJECT_DIR$/javaprogramming/oopprinciples/oopprinciples.iml" />
     </modules>
   </component>
 </project>
