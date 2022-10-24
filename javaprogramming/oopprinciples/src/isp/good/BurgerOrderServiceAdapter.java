@@ -1,10 +1,12 @@
 package isp.good;
 
-public class OrderServiceAdapter implements  BurgerOrderService{
+public class BurgerOrderServiceAdapter implements  BurgerOrderService{
 
     private OrderService adapter;
 
-    public OrderServiceAdapter(OrderService adapter) {
+
+
+    public BurgerOrderServiceAdapter(OrderService adapter) {
         //super();
         this.adapter = adapter;
     }
