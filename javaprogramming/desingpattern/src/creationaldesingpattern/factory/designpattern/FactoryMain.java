@@ -7,8 +7,8 @@ public class FactoryMain {
 //        OS obj = new RedHat();
 //        obj.spec();
 
-        OperatingSystemFactory osf = new OperatingSystemFactory();
-        OS obj = osf.getInstanceOS("close");
+//        OperatingSystemFactory osf = new OperatingSystemFactory();
+        OS obj = OperatingSystemFactory.getInstanceOS("close");
         obj.spec();
 
     }
