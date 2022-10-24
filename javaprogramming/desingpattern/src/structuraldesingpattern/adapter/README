@@ -1,0 +1,14 @@
+References for Adapter Pattern:
+
+When to use Adapter Design Pattern:
+
+1. When we want an object to use an existing incompatible interface.
+2. When we need a mechanism for two existing incompatible interfaces/classes to talk
+to each other.
+3. When we want to create a middle layer for creating a connection from b/w your modern
+code and existing legacy code.
+4.When we want to create a middle layer for creating a connection from b/w your modern
+code and 3rd-party code.
+
+1. https://www.javadevjournal.com/java-design-patterns/adapter-design-pattern/
+2. https://dzone.com/articles/adapter-design-pattern-in-java
