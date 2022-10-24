@@ -12,7 +12,7 @@ package creationaldesingpattern.factory.designpattern;
 // https://www.digitalocean.com/community/tutorials/factory-design-pattern-in-java
 public class OperatingSystemFactory {
 
-    public OS getInstanceOS(String str){
+    public static OS getInstanceOS(String str){
         if(str.equals("open"))
             return new RedHat();
         else if(str.equals("close"))
