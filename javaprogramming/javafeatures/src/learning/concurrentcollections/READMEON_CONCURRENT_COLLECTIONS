@@ -25,3 +25,20 @@ suitable for multithreaded scalable applications.
 6) ConcurrentModificationException is most common problem for all traditional collection objects.
 
 7) To overcome all the problems we need to move concurrent collections framework.
+8) Concurrent Collection framework Introduced in Java 1.5 version onwards.
+
+Things to remember:
+
+1) Concurrent Collections are Thread Safe.
+2) When compare to traditional thread safe collections, concurrent collections performance is more
+because it uses different locking mechanisms( such as Segment level locking, bucket level locking etc).
+3) While one thread interacting collection, the other thread are allowed to modify the collection
+in safe manner.
+
+Therefore, Concurrent Collections never throw ConcurrentModificationException.
+
+Important concurrent collections are
+
+1) ConcurrentHashMap
+2) CopyOnWriteArrayList
+3) CopyOnWriteArraySet
