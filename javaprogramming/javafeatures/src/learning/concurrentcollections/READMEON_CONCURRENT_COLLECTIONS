@@ -1,0 +1,27 @@
+Need of concurrent collections:
+
+1) Most of the traditional collections are not Thread safe due to his it leads to
+data consistency problems. (Thread safe allows only one thread to perform operations on
+collections at a time. It will never allow you  second thread on collections until
+first thread completed).
+for instance ArrayList, LinkedList, HashSet, TreeSet etc..
+
+2) Vector, Hashtable (These are traditional thread safe collections),
+Collections.synchronizedMap, Collections.synchronizedSet, Collections.synchronizedList.
+Problem with these collections, waiting time is more when more than one thread is operating on
+collections.
+
+3) Traditional collections 90 percent of them are not Thread safe(it leads to data consistency),
+even few of traditional collections which provides thread safe it creates waiting time
+problems.
+
+4) While iterating collection object using Thread 1, If Thread 2 try to modify the structual modification
+on collection object that is performed by Thread 1 then  Iterator fails and raise an
+exception called ConcurrentModificationException.
+
+5) Due to reason 4 mentioned above , traditional collection objects are not
+suitable for multithreaded scalable applications.
+
+6) ConcurrentModificationException is most common problem for all traditional collection objects.
+
+7) To overcome all the problems we need to move concurrent collections framework.
