@@ -57,3 +57,42 @@ Methods in ConcurrentMap(I)
 1. public abstract V putIfAbsent(K, V);
 2. public abstract boolean remove(java.lang.Object, java.lang.Object);
 3. public abstract boolean replace(K, V, V);
+
+
+ConcurrentHashMap:-
+-------------------
+1) Default capacity of traditional hashmap or concurrent hash map is 16(buckets).
+
+Here 16 represents concurrent levels. Look into more details
+
+For instance initial capacity of  concurrent map is 16 and concurrency level 16 it means for every bucket
+one lock will be available.
+
+For instance initial capacity of concurrent map is 16 and concurrency level 8 it means for every two buckets
+one lock is available. Most of the time concurrent level and capacity level more or less same.
+
+a) Bucket Level Locking
+b) Segment Level Locking
+
+Things to remember:--
+------------------
+1) Underlying data structure is Hashtable for ConcurrentHashMap
+2) ConcurrentHashMap allows concurrent read operations and thread safe update operations.
+3) To perform read operation thread won't require any lock. But to perform update operation
+thread requires lock. But it is lock on only particular part of the map object(segement level/
+bucket level) instead of total map.
+4) Concurrent update is achieved by internally dividing map in to smaller portions which is
+defined by concurrent Levels.
+5) Default concurrency level is 16.
+6) ConcurrencyHashMap allows any number of read operations but 16 update operations at a time by default.
+7) Null is not allowed for both key and value.
+8) While one thread is iterating, the other thread can perform update operation and ConcurrentHashMap
+never throw ConcurrentModificationException.
+
+Constructors in ConcurrencyHashMap:
+
+  public java.util.concurrent.ConcurrentHashMap(); // default capacity 16, fill ration 0.75(load factor)
+  public java.util.concurrent.ConcurrentHashMap(initial capacity);
+  public java.util.concurrent.ConcurrentHashMap(initial capacity, fill ratio);
+  public java.util.concurrent.ConcurrentHashMap(initial capacity, fill ratio, concurrency level);
+   public java.util.concurrent.ConcurrentHashMap(java.util.Map<? extends K, ? extends V>);
