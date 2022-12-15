@@ -12,6 +12,9 @@ public class InvokeAllMethod {
 
     public static void main(String[] args) throws Exception {
 
+        int processors=Runtime.getRuntime().availableProcessors();
+        System.out.println(processors);
+
         ExecutorService executorService= Executors.newSingleThreadExecutor();
         Set<Callable<String>> callables= new HashSet<>();
 
