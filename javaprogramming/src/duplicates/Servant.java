@@ -27,8 +27,7 @@ public class Servant {
 
     @Override
     public String toString() {
-        return "Servant{" +
-                "servantId=" + servantId +
-                '}';
+        //return "Servant{" + "servantId=" + servantId + '}';
+        return " " +servantId;
     }
 }

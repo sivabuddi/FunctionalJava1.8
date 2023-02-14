@@ -30,7 +30,7 @@ public class RemoveServantsDuplicates {
         servantList.add(servant3);
         servantList.add(servant4);
 
-        System.out.println(servantList.toString());
+        System.out.println(servantList);
         List<Servant> unique_servant= servantList.stream().distinct().collect(Collectors.toList());
         System.out.println(unique_servant);
 
